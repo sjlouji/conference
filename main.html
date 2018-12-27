@@ -1,0 +1,581 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ICCIS'19</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="styles.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+    <!--Navbar at the top-->
+    <div>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand " href="main.html"><img src="img/icc.png"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutus">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#committe">Committe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#callforpaper">Call for Paper</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#keynodespeakers">Keynote Speakers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#conferenceregi">Conference Registration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sponsership">Call for Sponsorship</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+    <!--End of Navbar-->
+
+    <!--Smooth Scrolling Animation Script-->
+    <script>
+      $(document).ready(function()
+      {
+        $('nav li a').click(function()
+        {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname)
+          {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+             if ($target.length)
+              {
+                var targetOffset = $target.offset().top-$('nav').height();
+                $('html,body') .animate({scrollTop: targetOffset}, 1000);
+                return false;
+               }
+              }
+             });
+            });
+    </script>
+    <!--End of Smooth Animation Script-->
+    <!-- Caurousel Image Slider-->
+
+    <!--End of Caurosel Image Slider-->
+
+    <!--About Page-->
+    <section id="aboutus">
+      <div >
+          <h2 class="display-4"><center>About</center></h2>
+          <div class="border"></div>
+      </div>
+    <div class="container-fluid padding">
+      <div class="row text-centre padding">
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+
+          <h2 class="h4"><center>About the Institution</center></h2>
+
+          <p>The Loyola-ICAM (Institute Catholique d’Arts et Metiers) College of Engineering and Technology (LICET) is a Christian minority institution, founded in 2010 by the Jesuit Chennai Mission to form competent engineers with social responsibility. The Loyola College Society with its rich experience in Higher Education administers LICET in collaboration with ICAM group Lille, France. It is approved by AICTE and affiliated to Anna University, Chennai. LICET offers a collective enterprise contributing to the formation of engineers who would promote growth in individuals and in society.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+
+          <h2 class="h4"><center>About the Department of IT</center></h2>
+          <p>The primary objective of the Department of Information Technology at LICET is to prepare our students to apply their technological skills to comprehend and analyze complex problems to design and implement the feasible solutions. Graduates acquire the desire for lifelong learning and the ability to work in multi-disciplinary teams in meeting the global challenges. Graduates exhibit professional ethics, skills for management and responsibility towards societal needs. With rapidly evolving technology and the continuous need for innovation the department has always produced quality professionals.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+
+          <h2 class="h4"><center>About ICCIS</center></h2>
+          <p>The Second International Conference on Computing and Information Systems (ICCIS ’19) focuses on the computing, information technologies, and information systems. It aims to provide a platform for sharing insights, experiences and interaction on various facets of evolving Technologies and patterns related to Information Technology. The main objective of the conference is to help students, research scholar, industry experts to share ideas and technology implementation. The conference encourages students, researchers and industrialists come with innovative ideas on latest technologies. ICCIS ’19 promotes technologists interaction and prolonged learning.</p>
+        </div>
+      </div>
+      <div class="row" style="justify-content: center;">
+        <div class="col-12" style="text-align:center">
+          <h2  class="h3">Vission of the Department</h2>
+          <p>To build proficient Information Technologists through moral, ethical and technological standards for the societal well-being.
+          </p>
+        </div>
+        <div class="col-10" style="text-align:center">
+          <h2 class="h3">Mission of the Department</h2>
+          <ul style="text-align:Start; justify:">
+<li>To provide a practice oriented methodology with access to contemporary knowledge in IT for the betterment of the society</li>
+<li>To prepare students for competent careers in Information Technology through innovation, team spirit, ethics and entrepreneurial skills in evolving technologies</li>
+<li>To integrate our department with quality organizations worldwide and promote industry institute interaction for symbiotic benefits</li>
+<li>To promote interdisciplinary research through innovation and reflective thinking</li>
+</ul>
+
+      </div>
+
+    </div>
+    </div>
+
+  </section>
+    <!-- End of About Page-->
+
+    <!--Committe -->
+    <section id="committe">
+      <div class="container-fluid padding">
+        <div class="row text-centre padding">
+          <div class="col-12">
+              <h4 class="display-4" style="text-align:center">
+                      <center>ORGANIZING COMMITTEE</center></h2>
+                      <div class="border"></div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <h3 >CHIEF PATRONS</h3>
+              <p>
+                Rev Fr Francis Jayapathy SJ<br>Rector, <br>LCS, India<br><br>
+                Rev Dr Alphonse Manickam SJ<br>Director, <br>LICET, India
+              </p>
+
+
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <h3>PATRONS</h3>
+              <p>
+              Dr L Antony Michael Raj<br>Principal, LICET, India<br><br>
+              Rev Dr Justin Emmanuel SJ<br>Dean of Students, LICET, India<br><br>
+              Mr Nicolas Juhel<br>Dean - Engineering Education, LICET, India<br><br>
+              Dr M Selvanayagam<br>Dean – Research, LICET, India<br><br>
+              Mr S Francis Jeyapathi,<br>Vice – Principal, LICET, India</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <h3>CONVENOR<br></h3>
+						<p>
+						Dr R Juliana<br>Professor & Head, <br>Department of IT, LICET, India</p>
+						<h3>CONFERENCE CHAIR<br></h3>
+						<p>
+						Dr R Deepa<br>Associate Professor, <br>Department of IT, LICET, India</p>
+
+            <h3>CONFERENCE CO-CHAIR<br></h3>
+						<p>
+						Ms Sherril Sophie Maria Vincent<br>Assistant Professor, <br>Department of IT, LICET, India</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <h3>Program Committe<br></h3>
+        <p style="line-height:1.8em">
+                    Ms A Janani, LICET, India<br>
+                    Ms B Prabha, LICET, India<br>
+                    Ms V Viancy, LICET, India<br>
+                    Ms E Anitha, LICET, India<br>
+                    Ms Sherril Sophie Maria Vincent, LICET, India<br>
+                    Ms U Ramya Laurraine, LICET, India<br>
+                    Ms H Bemesha Smitha, LICET, India<br>
+                    Ms G Shobana, LICET, India<br>
+                    Ms V Kavitha, LICET, India<br>
+                    Mr C Marshall Mano, LICET, India
+                    </p>
+    </div>
+        </div>
+
+          <div class="row text-centre padding" style="width:1100px; margin-left:auto;margin-right:auto">
+
+            <div class="col-lg-6">
+              <h3>Advisory Committee</h3>
+                            <p>
+                Dr Abdullah Tansel, The City University of New York, USA<br>
+    Dr Ibrahima Faye, Universiti Teknologi PETRONAS, Malaysia<br>
+    Dr Selwyn Piramuthu, University of Florida, USA<br>
+    Dr Azad Naik, Microsoft Research, USA<br>
+    Mr Ajay Deshpande, CTO, Rakya Technologies, India<br>
+    Dr R Venkateswaran, Sr. Vice President, Persistent Systems Ltd., India<br>
+    Dr Sameep Mehta, Sr. Researcher & Manager, IBM Research, India<br>
+    Mr T Srinivasan, CEO, Glosys Technology Solutions Pvt. Ltd., India<br>
+    Mr N Karthikeyan, Chairman, Cyber Crime Chambers, India<br>
+    Dr P Uma Maheswari, College of Engineering Guindy, India<br>
+    Dr S Swamynathan, College of Engineering Guindy, India<br>
+    Dr B Vanathi, Valliamai Engineering College, India<br>
+    Mr Jerald Inico, LIMCOS, Loyola College, India<br>
+    Rev Fr A Leolin Arockiadass SJ, LICET, India<br>
+    Dr D Egfin Nirmala, LICET, India<br>
+    Dr D Moses Raja Cecil, LICET, India<br>
+    Dr K Gopalakrishnan, LICET, India<br>
+    Dr S Prathiba, LICET, India<br>
+    Dr Caleb Chanthi Raj, LICET, India<br>
+    Ms S A Josephine, LICET, India<br>
+    Mr S Irudayanathan, LICET, India<br>
+    Dr S Benkins Dinesh, LICET, India<br>
+    Dr S Gunasekaran, LICET, India
+    <br>
+              </p>
+
+          </div>
+
+
+
+        <div class="col-lg-6">
+          <h3>Technical Program Committee</h3>
+                      <p>
+          Dr Grigori Sidorov, National Polytechnic Institute, IPN, Mexico<br>
+Dr Houjun Tang, Lawrence Berkeley National Lab (LBNL), USA<br>
+Dr Han Fang, Facebook, USA<br>
+Dr Akhilesh Bajaj, The University of Tulsa, Oklahoma<br>
+Dr A Jaya, B.S.Abdur Rahman Crescent Institute of Science&Technology, India <br>
+Dr Charulatha, Rajalakshmi Engineering College, India<br>
+Dr T R Reshmi, VIT-Chennai, India<br>
+Dr T T Mirnalinee, SSN College of Engineering, India <br>
+Dr V Dhanakoti, Valliamai Engineering College, India <br>
+Dr R Anitha, Sri Venkateswara College of Engineering, India<br>
+Dr V Shanmuganeethi, NITTTRC, India <br>
+Dr S Godfrey Winster, Saveetha Engineering College, India<br>
+Dr P Janarthanan, Sri Venkateswara College of Engineering, India<br>
+Dr R Dhanalakshmi, KCG College of Technology, India<br>
+Dr C Arun, RMK College of Engineering & Technology, India<br>
+Dr B Shanthini, St. Peter's College of Engineering and Technology, India<br>
+Dr A Babiyola, Meenakshi Sundarajan Engineering College, India<br>
+Dr M K Sandhya, Meenakshi Sundarajan Engineering College, India<br>
+Dr S Deepajothi, Ashoka Institute of Engineering and Technology, India<br>
+Dr V Viji Rajendran, NSS College of Engineering, India<br>
+Dr S Sindhu, NSS College of Engineering, India<br>
+Ms S Aarthi, Meenakshi Sundarajan Engineering College, India<br>
+Ms B Monica Jenefer, Meenakshi Sundarajan Engineering College, India
+<br>
+          </p>
+
+      </div>
+
+      </div>
+
+        </div>
+    </section>
+
+    <!--End of Committe-->
+
+    <!--Call for Paper-->
+      <section id="callforpaper">
+        <div class="container-fluid padding">
+          <div class="row text-centre padding">
+
+            <style>
+            #parallax-image{
+              background-image: url("img/slider1.jpg");
+              height: 400px;
+              width: 100%;
+              background-attachment: fixed;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            </style>
+            <div class="col-12">
+                <h4 class="display-4" style="text-align:center;">
+                      <center>Topics of Intrest</center></h2>
+                            <h6 style="text-align:center;"><center>(Not limited to)</center  ></h6>
+                            <div class="border"></div>
+            </div>
+            <div id="parallax-image">
+
+              <div class="row text-centre padding">
+              <div class="col-xs-12 col-sm-6 col-md-4">
+
+                <p><br>
+    Artificial Intelligence<br>
+    Block Chain Technology<br>
+    Cloud Computing<br>
+    Cognitive Computing<br>
+    Computer Graphics and Animation<br>
+    Cyber Security and Cyber Forensics<br>
+    </p>
+
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <p><br>
+    Data Science and Analytics<br>
+    E-Commerce<br>
+    Energy-aware computing<br>
+    Green Computing<br>
+    Human Computer Interaction<br>
+    Intelligent Systems and computing<br>
+    <p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <p><br>
+    Internet of Things<br>
+    Knowledge and Information Management<br>
+    Machine learning<br>
+    Organizational Information Systems<br>
+    Quantum Computing<br>
+    Robotics<br>
+    <p>
+            </div>
+        </div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+    <!--End Call for Paper-->
+    <!--Key Node speakers-->
+    <section id="keynodespeakers">
+      <div class="container-fluid padding">
+        <div class="row text-centre padding">
+          <div class="col-12">
+              <h4 class="display-4" style="text-align:center">
+                        <center>keynode speakers<center></h2>
+                          <div class="border"></div>
+          </div>
+          <div class="container-fluid padding" style="width:1100px; margin-left:auto;margin-right:auto">
+            <div class="row padding">
+              <img src="img/abdullah.png">
+          </div>
+        </div>
+        <div class="container-fluid padding" style="width:1100px; margin-left:auto;margin-right:auto">
+          <div class="row padding">
+            <div class="col-lg-9">
+              <img src="img/updateib.png">
+          </div>
+
+        </div>
+      </div>
+        </div>
+        <!--End of Keynode Speakers-->
+
+        <!--Conference Registration-->
+        <section id="conferenceregi">
+          <div class="container-fluid padding">
+            <div class="row text-centre padding">
+              <div class="col-12">
+                  <h4 class="display-4" style="text-align:center">
+                            Registration Fee</h2>
+
+                            <h5 style="text-align:center">(includes conference kit, abstract proceedings, publication, refreshments & lunch)</h5>
+                            <div class="border"></div>
+              </div>
+            </div>
+            <div class="row text-centre padding">
+                <div class="col-sm-6 col-xs-12">
+                  <table width="100%">
+<!-- <tr style="color:#DC143C;">-->
+<tr><td><b>Registration Categories<b></td><td align=center><b>Indian Delegates<b></td><td align=center><b>Foreign Delegates<b></td></tr>
+<tr><td>UG Students</td><td>₹ 2000</td><td>USD 100</td></tr>
+<tr><td>PG Students / Full-time Research Scholars</td><td>₹ 2500</td><td>USD 120</td></tr>
+<tr><td>Faculty / Delegates from Academics </td><td>₹ 3000</td><td>USD 150</td></tr>
+<tr><td>Delegates from Industries</td><td>₹ 3500</td><td>USD 170</td></tr>
+<!--<tr><td>Listener</td><td>₹ 1000</td><td>USD 80</td></tr>-->
+<!--<tr><td>PG Students/ Research Scholars</td><td>: ₹ 1500 ($125 USD for foreign participants)</td></tr>-->
+
+                  </table>
+</p>
+</div>
+<div class="col-sm-6 col-xs-12">
+<div>
+<h4 >Dates to Remember</h4>
+
+<p>
+<table width="100%">
+<tr><td> </td><td> </td></tr>
+<tr><td> </td><td> </td></tr>
+<tr><td>Paper Submission Deadline</td><td>: <blink
+>20<sup>th</sup> December 2018</blink></td></tr>
+<tr><td>Acceptance Notification</td><td>: 10<sup>th</sup> January 2019</td></tr>
+<tr><td>Camera Ready Paper Submission</td><td>: 16<sup>th</sup>  January 2019</td></tr>
+<tr><td>Registration Starts on</td><td>: 11<sup>th</sup> January 2019</td></tr>
+<tr><td>Last Date for Registration</td><td>: 19<sup>th</sup> January 2019</td></tr>
+                  <tr><td>Conference Dates</td><td>: 28<sup>th</sup> Feb & 1<sup>st</sup> Mar 2019</td></tr>
+</table>
+</p>
+            </div>
+
+            </div>
+          </div>
+
+          <div class="container-fluid padding">
+          <div class="col-md-12 col-sm-6 col-xs-12">
+
+                  <div class="col-md-10" >
+                      <h4>Paper Submission Guidelines</h4>
+        <p style="font-size:13px">
+* The paper submitted to this conference must be original and must not be under consideration for publication elsewhere</br>
+* The paper should be written in clear, concise and grammatically correct English</br>
+* The paper length should be between 8 to 10 pages and formatted in Microsoft Word (.docx/.doc) with double-column format</br>
+* Unformatted papers and papers beyond the page limit may not be sent for review process</br>
+* The list of authors provided at submission time is final</br>
+* Electronic submission of paper (in MS-Word.doc, .docx) must be mailed to <b style="color:#8B008B">iccis.it@gmail.com</b></br>
+* For further information, click <a href="doc/AUTHOR GUIDELINES_ICCIS19.pdf"><strong style="font-size:16px"><blink style="font-size:20px;color:#FF1493">Author Guidelines</blink></strong></a>
+</p>
+
+
+</div>
+              </div>
+</div>
+<!-- /.col-md-4 -->
+
+
+<div class="row">
+
+          <div class="col-md-12 col-sm-6 col-xs-12">
+
+                  <div >
+                      <h4>Review Process</h4>
+        <p style="font-size:13px">
+* Papers will be checked for plagiarism subjected to Double-blind review.</br>
+* Selection criteria include originality of ideas, novelty, correctness, clarity and significance of results and quality of presentation.</br>
+</p>
+
+
+</div>
+              </div>
+</div>
+<!-- /.col-md-4 -->
+
+<div class="row">
+          <div class="col-md-12 col-sm-6 col-xs-12">
+
+                  <div>
+                      <h4>Publication</h4>
+        <p style="font-size:13px">
+* At least one author for each accepted paper must register for the conference for the submission to be included in the journal.</br>
+* Accepted and registered conference papers will be published in a UGC approved journal or a Scopus-indexed journals (with an additional cost).</br>
+<pre>
+  o International Journal of Engineering and Technology(UAE), ISSN: 2227524X – Scopus-indexed
+  o International Journal of Applied Engineering Research (IJAER), ISSN: 09734562 – UGC Approved
+
+</pre>
+</p>
+
+<h4>Registration form can be downloaded here---> <a href="doc/ICCIS19-RegistrationForm.docx"><strong style="font-size:16px"><blink style="font-size:20px;color:#FF1493">ICCIS19 Conference Registration Form</blink></strong></a></h4><br>
+</div>
+              </div>
+</div>
+</div>
+        </section>
+        <!--End of Conference Registration-->
+
+        <!--Call for Sponsorship-->
+        <section id="sponsership">
+          <div>
+          <h3 class="display-4" style="align-text:center"> Call for Sponsorship</h3>
+          <p>You are invited to support 2019 Second International Conference on Computing and Information Systems (ICCIS).</br> Sponsorship includes an on-site exhibit table.</br>Corporate support can be targeted to a particular event or activity at the Conference.</br>ICCIS 2019 has four sponsorship levels: Platinum, Gold, Silver, and Bronze.</b></br><b style="color:white">Your contributions are eligible for tax benefit under section 80G.</b><b style="color:black"> Sponsors may contact ICCIS 2019 chair by email (iccis.it@gmail.com). </b></p>
+</div>
+        <div class="container-fluid padding">
+          <div class="row padding">
+            <div class="col-md-5">
+              <div class="card">
+              <h4 class="card-title">Platinum</h4>
+              <h5 class="card-subtitle">1,00,000</h5>
+              <p><div class="plan-list">
+                  <ul>
+                      <li>Recognition as Platinum Sponsor in print, on the ICCIS 2019 webpage</li>
+                      <li>Verbal recognition at the opening ceremony</li>
+                      <li>Sponsorship recognition in the Conference Booklet (Name and/or Logo)</li>
+                      <li>One full-page advertisement in the Conference Booklet Opportunity for Sponsor-named Panel program</li>
+                      <li>Best Paper award</li>
+  <li>Free for 5 delegates to attend the conference</li>
+                  </ul>
+              </div></p>
+            </div>
+          </div>
+
+            <div class="col-md-4">
+              <div class="card">
+              <h4 class="card-title">Gold</h4>
+              <h5 class="card-subtitle">75,000</h5>
+              <p>  <div class="plan-list">
+                    <ul>
+                        <li>Recognition as Gold Sponsor in print, on the ICCIS 2019 webpage</li>
+                        <li>Verbal recognition at the opening ceremony</li>
+                        <li>Sponsorship recognition in the Conference Booklet (Name and/or Logo)</li>
+                        <li>One full-page advertisement in the Conference Program Booklet</li>
+                        <li>Free for 4 delegates to attend the conference Opportunity for Sponsor-named Panel program</li>
+    <li>Best Paper award</li>
+                    </ul>
+                </div></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+              <h4 class="card-title">Silver</h4>
+              <h5 class="card-subtitle">50,000</h5>
+              <p>  <div class="plan-list">
+                    <ul>
+                        <li>Recognition as Silver Sponsor in print, on the ICCIS 2019 webpage</li>
+    <li>Verbal recognition at the opening ceremony</li>
+                        <li>Sponsorship recognition in the Conference Booklet (Name and/or Logo)</li>
+    <li>Half-page advertisement in the Conference Booklet</li>
+    <li>Free for 3 delegates to attend the conference</li>
+                    </ul>
+                </div></p>
+              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <h4 class="card-title">Bronze</h4>
+              <h5 class="card-subtitle">25,000</h5>
+              <p>  <div class="plan-list">
+                    <ul>
+                        <li>Recognition as Bronze Sponsor in print, on the ICCIS 2019 webpage</li>
+    <li>Verbal recognition at the opening ceremony</li>
+                        <li>One-fourth advertisement in the Conference Booklet</li>
+    <li>Sponsorship recognition in the Conference Booklet (Name and/or Logo)</li>
+    <li>Free for 2 delegates to attend the conference</li>
+                    </ul>
+                </div></p>
+              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <h4 class="card-title">Other Sponsers</h4>
+              <h5 class="card-subtitle">Oppurtunites</h5>
+              <p>  <div class="plan-list">
+                    <ul>
+                        <li>Customized Sponsor package based on company needs and marketing benefits</li>
+                        <li>Individual contribution</li>
+                        <li>Conference Kit</li>
+                        <li>Best paper award</li>
+                        <li>Luncheons</li>
+                        <li>Remuneration and Memento to international speakers and session chairs</li>
+                        <li>Travel and Accommodation</li>
+                        <li>Website, banner, certificate design & printing</li>
+                        <li>Conference proceedings</li>
+                    </ul>
+                </div></p>
+              </div>
+          </div>
+
+        </div>
+      </section>
+        <!--End of call for sponsorship-->
+
+        <!--contact page-->
+          <section id="conxtact">
+            <div>
+<iframe src="https://www.google.com/maps/embed?pb=" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>            </div>
+          </section>
+        <!--End of Contact page-->
+
+        <!--footer-->
+        <footer >
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2 text-center">
+					<span class="icon-handle-streamline-vector logo"></span>
+					<h2 class="theme-title-smaller">Flair<span class="theme-title-smaller"> '18</span></h2>
+					<a href="#"><span class="ion-social-twitter social-icons-dark-hover mr15"></span></a>
+	                <a href="https://www.facebook.com/events/643114696087435/?notif_t=plan_user_invited&notif_id=1534047602352909" target="_blank"><span class="ion-social-facebook social-icons-dark-hover mr15"></span></a>
+	                <a href="#"><span class="ion-social-googleplus-outline social-icons-dark-hover"></span></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2 text-small text-center">
+					<hr>
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</footer><!-- /.footer -->
+        <!--End of Footer-->
+</body>
+</html>
