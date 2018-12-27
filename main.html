@@ -14,42 +14,98 @@
 <body>
 
     <!--Navbar at the top-->
-    <div>
-    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent">
-      <div class="container-fluid">
-        <a class="navbar-brand " href="main.html"><img src="img/icc.png"/></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#aboutus">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#committe">Committe</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#callforpaper">Call for Paper</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#keynodespeakers">Keynote Speakers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#conferenceregi">Conference Registration</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#sponsership">Call for Sponsorship</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="main.html">ICCIS19</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#aboutus">AboutUs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#callforpaper">Call for paper</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#keynodespeakers">Keynode Speakers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#conferenceregi">Conference Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sponsership">Sponsorship</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
-  </div>
-    <!--End of Navbar-->
+
+        <header class="first">
+          <div class="container my-auto text-center">
+            <div class="row">
+              <div class="col-lg-10 mx-auto">
+                <h1 class="text-uppercase">
+                  <strong>2nd International Conference on Computing and Information System <br></strong>
+                </h1>
+                <h4>
+                  <strong>
+                    Organized by<br>
+                  </strong>
+                  <strong>
+                    Department of Information Technology<br>
+                  </strong>
+
+                  <strong>
+                    Loyola ICAM College of Engineering and Technology
+                  </strong>
+                </h4>
+
+              </div>
+              <div class="col-lg-10 mx-auto">
+
+                <br>
+                <div class="row text-center">
+
+                  <div class="announcement" style="
+                      display: inline-block;
+                      text-align: center;
+                      width: 100%;
+                      background: rgba(0, 0, 0, 0.5);
+                      color: white;
+                      font-family: Arial, sans;
+                      padding: 5px;
+                      margin: 10px 0 0 0;
+                      vertical-align: middle;">
+                    <p style="margin:0"> ANNOUNCEMENTS:
+                    <br>
+                    February 28 & March 1, 2019
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>    <!--End of Navbar-->
+
+<script>
+$(document).ready(function() {
+        // Transition effect for navbar
+        $(window).scroll(function() {
+          // checks if window is scrolled more than 500px, adds/removes solid class
+          if($(this).scrollTop() > 500) {
+              $('.navbar').addClass('solid');
+          }
+          else {
+              $('.navbar').removeClass('solid');
+          }
+        });
+});
+</script>
 
     <!--Smooth Scrolling Animation Script-->
     <script>
