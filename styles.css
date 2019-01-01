@@ -59,6 +59,8 @@
   min-height:400px;
   background-size:cover;
   background-image:url('img/newlicet.png');
+-webkit-filter: brightness(200%);
+
 }
   .navbar {
     height: 80px;
@@ -69,15 +71,22 @@
     transition: background-color 1s ease 0s;
   }
   .navbar.solid {
-  background-color: white;
+  background-color: #292c2f;
   transition: background-color 1s ease 0s;
   border-radius: 2px;
   border-color: black;
+
+  }
+  .navbar.solid a{
+    color: white;
+  }
+#mainNav.solid li a{
+  color: white;
 }
 .jumbotron{
   border-radius: 20px;
   padding: 40px;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.65);
 }
 /* Transition effect */
 
