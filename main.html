@@ -9,139 +9,93 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link href="styles.css" rel="stylesheet"/>
+    <link href="animate.css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-
-    <!--Navbar at the top-->
-
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="#hel">ICCIS19</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto" id="idlink">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#aboutus">AboutUs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#callforpaper">Call for paper</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#keynodespeakers">Keynode Speakers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#conferenceregi">Conference Registration</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sponsership">Sponsorship</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact </a>
-                    </li>
-                </ul>
-                <div class="border"></div>
-            </div>
-        </div>
-    </nav>
-
-        <header class="first" id="hel">
-          <div class="container my-auto text-center">
-            <div class="row">
-  <div class="jumbotron" style="margin-top:100px;">
-              <div class="col-lg-10 mx-auto">
-
-                <h1 style="color:white"class="text-uppercase" style="color:white">
-                  <strong>2nd International Conference on Computing and Information System <br></strong>
-                </h1>
-                <h4 style="color:white">
-                  <strong>
-                    Organized by<br>
-                  </strong>
-                  <strong>
-                    Department of Information Technology<br>
-                  </strong>
-
-                  <strong>
-                    Loyola ICAM College of Engineering and Technology
-                  </strong>
-                </h4>
-
-              </div>
-
-              <div class="col-lg-10 mx-auto">
-
-                <br>
-                <div class="row text-center">
-
-                  <div class="announcement" style="
-                      display: inline-block;
-                      text-align: center;
-                      width: 100%;
-
-                      color: white;
-                      font-family: Arial, sans;
-                      padding: 5px;
-                      margin: 10px 0 0 0;
-                      vertical-align: middle;">
-                    <p style="margin:0"> Conference Dates:
-                    <br>
-                    February 28 & March 1, 2019
-                  </div
-                  <div class="row text-center">
-                  <div class="col mb-1">
-                    <img style="height:80px" src="img/licet.png">
-                  </div>
-                  <div class="col mb-1">
-                    <img style="height:80px" src="img/Grait.jpeg">
-                  </div>
-                </div>
-                </div>
-              </div>
-            </div>
-
-            </div>
-          </div>
-        </header>    <!--End of Navbar-->
-
-<script>
-$(document).ready(function() {
-        // Transition effect for navbar
-        $(window).scroll(function() {
-          // checks if window is scrolled more than 500px, adds/removes solid class
-          if($(this).scrollTop() > 500) {
-              $('.navbar').addClass('solid');
-          }
-          else {
-              $('.navbar').removeClass('solid');
-          }
-        });
-});
-</script>
-
-    <!--Smooth Scrolling Animation Script-->
-    <script type="text/javascript">
-      $(document).ready(function()
-      {
-        $('nav li a').click(function()
+<!--Navbar Solid effect-->
+  <script>
+  $(document).ready(function() {
+          $(window).scroll(function() {
+            if($(this).scrollTop() > 500) {
+                $('.navbar').addClass('solid');
+            }
+            else {
+                $('.navbar').removeClass('solid');
+            }
+          });
+  });
+  </script>
+  <!--End of navbar solid script-->
+  <!--Smooth Scrolling Animation Script-->
+  <script type="text/javascript">
+        $(document).ready(function()
         {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname)
+          $('nav li a').click(function()
           {
-            var $target = $(this.hash);
-            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-             if ($target.length)
-              {
-                var targetOffset = $target.offset().top-$('nav').height();
-                $('html,body') .animate({scrollTop: targetOffset}, 1000);
-                return false;
-               }
-              }
-             });
-            });
-    </script>
-    <!--End of Smooth Animation Script-->
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname)
+            {
+              var $target = $(this.hash);
+              $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+               if ($target.length)
+                {
+                  var targetOffset = $target.offset().top-$('nav').height();
+                  $('html,body') .animate({scrollTop: targetOffset}, 1000);
+                  return false;
+                 }
+                }
+               });
+              });
+  </script>
+  <!--Start of Navbar and header at the top-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="main.html" style="color:white">ICCIS19</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="navbar-item active">
+              <a class="nav-link" href="#hed" style="color:white;">Home</a>
+            </li>
+            <li class="navbar-item active">
+              <a class="nav-link" href="#aboutus" style="color:white">About</a>
+            </li>
+            <li class="navbar-item active">
+              <a class="nav-link" href="#committe" style="color:white">Committe</a>
+            </li>
+            <li class="navbar-item active">
+              <a class="nav-link" href="#callforpaper" style="color:white">Call for paper</a>
+            </li>
+            <li class="navbar-item active">
+              <a class="nav-link" href="#keynodespeakers" style="color:white">keynode Speaker</a>
+            </li>
+            <li class="navbar-item active">
+              <a class="nav-link" href="#conferenceregi" style="color:white">Conference Registration</a>
+            </li>
+            <li class="navbar-item active">
+              <a class="nav-link" href="#sponsership" style="color:white">Call for Sponser</a>
+            </li>
+            <li class="navbar-item active">
+              <a class="nav-link" href="#contact" style="color:white">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="headerblue" id="hed">
+      <div class="container hero">
+          <div class="row">
+              <div style="margin-top:200px"  >
+                  <h2 style="color: white;font-family:'Source Sans Pro', sans-serif;
+">2<sup>nd</sup> International Conference on Computing and Information Systems</h2>
+              </div>
+          </div>
+      </div>
+    </header>
+    <!--End of Navbar and header at the top-->
+
 
     <!--About Page-->
     <section id="aboutus">
@@ -524,18 +478,23 @@ Ms B Monica Jenefer, Meenakshi Sundarajan Engineering College, India
 
         <!--Call for Sponsorship-->
         <section id="sponsership">
-          <div>
-          <h3 class="display-4" style="align-text:center"> Call for Sponsorship</h3>
-          <p>You are invited to support 2019 Second International Conference on Computing and Information Systems (ICCIS).</br> Sponsorship includes an on-site exhibit table.</br>Corporate support can be targeted to a particular event or activity at the Conference.</br>ICCIS 2019 has four sponsorship levels: Platinum, Gold, Silver, and Bronze.</b></br><b style="color:white">Your contributions are eligible for tax benefit under section 80G.</b><b style="color:black"> Sponsors may contact ICCIS 2019 chair by email (iccis.it@gmail.com). </b></p>
-</div>
-        <div class="container-fluid padding">
-          <div class="row padding">
-            <div class="col-md-5">
-              <div class="card">
-              <h4 class="card-title">Platinum</h4>
-              <h5 class="card-subtitle">1,00,000</h5>
-              <p><div class="plan-list">
-                  <ul>
+          <div align="center"> <h3> <b>Call for Sponsorship </b></h3>
+          <p align="center">You are invited to support 2019 Second International Conference on Computing and Information Systems (ICCIS).</br>
+           Sponsorship includes an on-site exhibit table.</br>
+           Corporate support can be targeted to a particular event or activity at the Conference.</br>
+         ICCIS 2019 has four sponsorship levels: Platinum, Gold, Silver, and Bronze.</b></br>
+         <b>Your contributions are eligible for tax benefit under section 80G.</b>
+         <b style="color:black"> Sponsors may contact ICCIS 2019 chair by email (iccis.it@gmail.com). </b>
+       </p>
+        </div>
+          <div class="container content">
+            <div class="row gutters">
+              <div class="col-lg-4-col-md-4 col-sm-12">
+                <div class="plan-card plan-one">
+                  <div class="sponser-header green">
+              <h4 class="sponser-title">Platinum</h4>
+            </div>
+            <ul class="sponser-features" style=" text-align: center;">
                       <li>Recognition as Platinum Sponsor in print, on the ICCIS 2019 webpage</li>
                       <li>Verbal recognition at the opening ceremony</li>
                       <li>Sponsorship recognition in the Conference Booklet (Name and/or Logo)</li>
@@ -543,74 +502,73 @@ Ms B Monica Jenefer, Meenakshi Sundarajan Engineering College, India
                       <li>Best Paper award</li>
   <li>Free for 5 delegates to attend the conference</li>
                   </ul>
-              </div></p>
+              </div>
             </div>
-          </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+        		<div class="plan-card plan-one">
+        			<div class="sponser-header orange">
+        				<h4 class="sponser-title">Gold<br>₹ 75000</h4>
 
-            <div class="col-md-4">
-              <div class="card">
-              <h4 class="card-title">Gold</h4>
-              <h5 class="card-subtitle">75,000</h5>
-              <p>  <div class="plan-list">
-                    <ul>
-                        <li>Recognition as Gold Sponsor in print, on the ICCIS 2019 webpage</li>
-                        <li>Verbal recognition at the opening ceremony</li>
-                        <li>Sponsorship recognition in the Conference Booklet (Name and/or Logo)</li>
-                        <li>One full-page advertisement in the Conference Program Booklet</li>
-                        <li>Free for 4 delegates to attend the conference Opportunity for Sponsor-named Panel program</li>
+            </div>
+              <ul class="sponser-features">
+                        <li>Recognition as Gold Sponsor in print,<br> on the ICCIS 2019 webpage</li>
+                        <li>Verbal recognition at the opening<br> ceremony</li>
+                        <li>Sponsorship recognition in the <br>Conference Booklet <br>(Name and/or Logo)</li>
+                        <li>One full-page advertisement in the<br> Conference Program Booklet</li>
+                        <li>Free for 4 delegates to attend the<br> Conference Opportunity for<br> Sponsor-named Panel program</li>
     <li>Best Paper award</li>
                     </ul>
-                </div></p>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="plan-card plan-one">
+                <div class="sponser-header silver">
+                  <h4 class="sponser-title">Silver<br>₹ 5000</h4>
+                </div>
+              <ul class="sponser-features">
+                        <li>Recognition as Silver Sponsor <br>in print, on the  <br>ICCIS 2019  webpage</li>
+    <li>Verbal recognition at the opening<br> ceremony</li>
+                        <li>Sponsorship recognition in the <br>Conference Booklet<br> (Name and/or Logo)</li>
+    <li>Half-page advertisement in the<br> Conference Booklet</li>
+    <li>Free for 3 delegates to attend the<br> conference</li><br>
+                    </ul>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card">
-              <h4 class="card-title">Silver</h4>
-              <h5 class="card-subtitle">50,000</h5>
-              <p>  <div class="plan-list">
-                    <ul>
-                        <li>Recognition as Silver Sponsor in print, on the ICCIS 2019 webpage</li>
-    <li>Verbal recognition at the opening ceremony</li>
-                        <li>Sponsorship recognition in the Conference Booklet (Name and/or Logo)</li>
-    <li>Half-page advertisement in the Conference Booklet</li>
-    <li>Free for 3 delegates to attend the conference</li>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="plan-card plan-one">
+              <div class="sponser-header red">
+                <h4 class="sponser-title">Bronze<br>₹ 2500</h4>
+
+            </div>
+
+                <ul class="sponser-features">
+                        <li>Recognition as Bronze Sponsor in <br>print, on the <br>ICCIS 2019 webpage</li>
+    <li>Verbal recognition at the opening<br> ceremony</li>
+                        <li>One-fourth advertisement in the<br> Conference Booklet</li>
+    <li>Sponsorship recognition in the <br>Conference Booklet<br> (Name and/or Logo)</li>
+    <li>Free for 2 delegates to attend the<br> conference</li>
                     </ul>
-                </div></p>
               </div>
           </div>
-          <div class="col-md-4">
-            <div class="card">
-              <h4 class="card-title">Bronze</h4>
-              <h5 class="card-subtitle">25,000</h5>
-              <p>  <div class="plan-list">
-                    <ul>
-                        <li>Recognition as Bronze Sponsor in print, on the ICCIS 2019 webpage</li>
-    <li>Verbal recognition at the opening ceremony</li>
-                        <li>One-fourth advertisement in the Conference Booklet</li>
-    <li>Sponsorship recognition in the Conference Booklet (Name and/or Logo)</li>
-    <li>Free for 2 delegates to attend the conference</li>
-                    </ul>
-                </div></p>
-              </div>
+          <div class="col-lg-4-col-md-4 col-sm-12">
+            <div class="plan-card plan-one">
+              <div class="sponser-header blue">
+          <h4 class="sponser-title">Other Sponsor</h4>
+        </div>
+        <ul class="sponser-features" style="text-align:center">
+                <li>Customized Sponsor package based on company needs and marketing benefits</li>
+                <li>Individual contribution</li>
+                <li>Conference Kit</li>
+                <li>Best paper award</li>
+                <li>Luncheons</li>
+                <li>Remuneration and Memento to international speakers and session chairs</li>
+                <li>Travel and Accommodation</li>
+                <li>Website, banner, certificate design & printing</li>
+                <li>Conference proceedings</li>
+            </ul>
           </div>
-          <div class="col-md-4">
-            <div class="card">
-              <h4 class="card-title">Other Sponsers</h4>
-              <h5 class="card-subtitle">Oppurtunites</h5>
-              <p>  <div class="plan-list">
-                    <ul>
-                        <li>Customized Sponsor package based on company needs and marketing benefits</li>
-                        <li>Individual contribution</li>
-                        <li>Conference Kit</li>
-                        <li>Best paper award</li>
-                        <li>Luncheons</li>
-                        <li>Remuneration and Memento to international speakers and session chairs</li>
-                        <li>Travel and Accommodation</li>
-                        <li>Website, banner, certificate design & printing</li>
-                        <li>Conference proceedings</li>
-                    </ul>
-                </div></p>
-              </div>
+        </div>
           </div>
 
         </div>
