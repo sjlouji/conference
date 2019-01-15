@@ -8,8 +8,10 @@
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <link href="styles.css" rel="stylesheet"/>
-    <link href="animate.css" rel="stylesheet"/>
+
+
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
@@ -50,14 +52,14 @@
   <!--Start of Navbar and header at the top-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="main.html" style="color:white">ICCIS19</a>
+        <a class="navbar-brand" href="main.html" style="color:white">ICCI<font color="#16AC0D">S19</font></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="navbar-item active">
-              <a class="nav-link" href="#hed" style="color:white;">Home</a>
+              <a class="nav-link" href="#particles-js" style="color:white;">Home</a>
             </li>
             <li class="navbar-item active">
               <a class="nav-link" href="#aboutus" style="color:white">About</a>
@@ -84,15 +86,35 @@
         </div>
       </div>
     </nav>
-    <header class="headerblue" id="hed">
-      <div class="container hero">
+
+    <header class="headerblue">
+
+      <div class="container hero" >
           <div class="row">
-              <div style="margin-top:200px"  >
-                  <h2 style="color: white;font-family:'Source Sans Pro', sans-serif;
+
+              <div style="margin-top:200px" >
+                  <h2 class="display-4" style="color: white;font-family:'Helvetica';
 ">2<sup>nd</sup> International Conference on Computing and Information Systems</h2>
-              </div>
+<div class="boxed">
+</div>
+
+</div>
+
+<div style="margin-top:40px;">
+<h3  style="color: white;font-family:'Helvetica';">Organized by <br>Department of Information Technology <br>Loyola ICAM College of Engineering and Technology</h3>
+</div>
+<div class="col mb-1" style="margin-left: 70px">
+  <img style="height:150px" src="img/newCollegelogo.png">
+</div>
+<div class="col mb-1">
+  <img style="height:150px" src="img/csi-logo.png">
+</div>
+<div class="caption" style="margin-top:40px;margin:0 auto; margin-top:100px;">
+<h3  style="color: white;font-family:'Helvetica';">Febraury 28 and March 1, 2019</h3>
+</div>
           </div>
       </div>
+
     </header>
     <!--End of Navbar and header at the top-->
 
@@ -574,7 +596,10 @@ Ms B Monica Jenefer, Meenakshi Sundarajan Engineering College, India
         </div>
       </section>
         <!--End of call for sponsorship-->
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="400px" id="gmap_canvas" src="https://maps.google.com/maps?q=loyola%20icam%20college%20&t=k&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net">tree layout wordpress themes</a></div>
+        <style>.mapouter{text-align:right;height:400px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style></div>
 
+        </div>
 
         <!-- Footer -->
   <footer class="page-footer font-small unique-color-dark" style="background-color:#292c2f ;" id="contact">
@@ -595,7 +620,7 @@ Ms B Monica Jenefer, Meenakshi Sundarajan Engineering College, India
             <div class="col-md-6 col-lg-7 text-center text-md-right">
 
               <!-- Facebook -->
-              <a class="fb-ic">
+              <a class="fb-ic" href="loujibrothers.com">
                 <i style="color:white" class="fab fa-facebook-f white-text mr-4"> </i>
               </a>
               <!-- Twitter -->
@@ -625,21 +650,21 @@ Ms B Monica Jenefer, Meenakshi Sundarajan Engineering College, India
       </div>
 
       <!-- Footer Links -->
-      <div class="container text-center text-md-left mt-5 special-color-dark" >
+      <div class="container  text-md-left mt-5 special-color-dark" >
 
         <!-- Grid row -->
-        <div class="row mt-3">
+        <div class="row">
 
           <!-- Grid column -->
-          <div class="col-md-4 col-xl-3 mx-auto">
+          <div class="col-lg-6" >
 
             <!-- Content -->
             <h6 class="text-uppercase font-weight-bold" style="color:white">ICCIS19</h6>
             <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="color:white;width: 60px;">
-            <p style="color:white">Conference Chair - ICCIS’19<br>
-Department of Information Technology,<br>
-Loyola–ICAM College of Engineering and Technology,<br>
-Loyola Campus, Nungambakkam,<br>
+            <p style="color:white">Conference Chair: +919941055818<br>
+Conference Co-chair: +919176092221<br>
+Email: iccis.it@gmail.com<br>
+Website : www.iccis.in	<br>
 Chennai-600034, TamilNadu, <br>
 INDIA</p>
 
@@ -650,7 +675,7 @@ INDIA</p>
 
 
           <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <div class="col-lg-6">
 
             <!-- Links -->
             <h6 class="text-uppercase font-weight-bold" style="color:white">Contact</h6>
@@ -666,6 +691,8 @@ INDIA</p>
 
           </div>
           <!-- Grid column -->
+          <div class="col-md-4 col-xl-3 mx-auto">
+
 
         </div>
         <!-- Grid row -->
@@ -682,5 +709,8 @@ INDIA</p>
 
     </footer>
     <!-- Footer -->
+    <script type="text/javascript"src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
 </body>
 </html>
