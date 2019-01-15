@@ -41,7 +41,7 @@
               $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
                if ($target.length)
                 {
-                  var targetOffset = $target.offset().top-$('nav').height();
+                  var targetOffset = $target.offset().top-$('nav').height()-20;
                   $('html,body') .animate({scrollTop: targetOffset}, 1000);
                   return false;
                  }
@@ -93,7 +93,7 @@
           <div class="row">
 
               <div style="margin-top:200px" >
-                  <h2 class="display-4" style="color: white;font-family:'Helvetica';
+                  <h3 class="display-4" style="color: white;font-family:'Helvetica';
 ">2<sup>nd</sup> International Conference on Computing and Information Systems</h2>
 <div class="boxed">
 </div>
@@ -121,65 +121,68 @@
 
     <!--About Page-->
     <section id="aboutus">
-      <div >
-          <h2 class="display-4"><center>About</center></h2>
-          <div class="border"></div>
+      <div style="text-align:center">
+          <h2 class="cool-link display-4" style="margin: 0 auto;">About</h2>
+
+      </div>
+      <div class="jumbotron jumbotron-fluid" style="margin:50px;background:#F8F8F8;">
+        <div class="row" style="justify-content: center;">
+          <div class="col-12" style="text-align:center">
+            <h2>Vission of the Department</h2>
+            <p class="lead">To build proficient Information Technologists through moral, ethical and technological standards for the societal well-being.
+            </p>
+          </div>
+          <hr class="my-4">
+          <div class="col-10" style="text-align:center;">
+            <h2>Mission of the Department</h2>
+            <p style="text-align:center; justify:" class="lead">
+  To provide a practice oriented methodology with access to contemporary knowledge in IT for the betterment of the society<br>
+  To prepare students for competent careers in Information Technology through innovation, team spirit, ethics and entrepreneurial skills in evolving technologies<br>
+  To integrate our department with quality organizations worldwide and promote industry institute interaction for symbiotic benefits<br>
+  To promote interdisciplinary research through innovation and reflective thinking<br>
+</p>
+
+        </div>
+
+      </div>
       </div>
     <div class="container-fluid padding">
       <div class="row text-centre padding">
 
         <div class="col-xs-12 col-sm-6 col-md-4">
 
-          <h2 class="h4"><center>About the Institution</center></h2>
-
-          <p>The Loyola-ICAM (Institute Catholique d’Arts et Metiers) College of Engineering and Technology (LICET) is a Christian minority institution, founded in 2010 by the Jesuit Chennai Mission to form competent engineers with social responsibility. The Loyola College Society with its rich experience in Higher Education administers LICET in collaboration with ICAM group Lille, France. It is approved by AICTE and affiliated to Anna University, Chennai. LICET offers a collective enterprise contributing to the formation of engineers who would promote growth in individuals and in society.</p>
+          <h2><center>About the Institution</center></h2>
+          <p class="lead" style="justify">The Loyola-ICAM (Institute Catholique d’Arts et Metiers) College of Engineering and Technology (LICET) is a Christian minority institution, founded in 2010 by the Jesuit Chennai Mission to form competent engineers with social responsibility. The Loyola College Society with its rich experience in Higher Education administers LICET in collaboration with ICAM group Lille, France. It is approved by AICTE and affiliated to Anna University, Chennai. LICET offers a collective enterprise contributing to the formation of engineers who would promote growth in individuals and in society.</p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4">
 
-          <h2 class="h4"><center>About the Department of IT</center></h2>
-          <p>The primary objective of the Department of Information Technology at LICET is to prepare our students to apply their technological skills to comprehend and analyze complex problems to design and implement the feasible solutions. Graduates acquire the desire for lifelong learning and the ability to work in multi-disciplinary teams in meeting the global challenges. Graduates exhibit professional ethics, skills for management and responsibility towards societal needs. With rapidly evolving technology and the continuous need for innovation the department has always produced quality professionals.</p>
+          <h2><center>About the Department of IT</center></h2>
+          <p class="lead">The primary objective of the Department of Information Technology at LICET is to prepare our students to apply their technological skills to comprehend and analyze complex problems to design and implement the feasible solutions. Graduates acquire the desire for lifelong learning and the ability to work in multi-disciplinary teams in meeting the global challenges. Graduates exhibit professional ethics, skills for management and responsibility towards societal needs. With rapidly evolving technology and the continuous need for innovation the department has always produced quality professionals.</p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4">
 
-          <h2 class="h4"><center>About ICCIS</center></h2>
-          <p>The Second International Conference on Computing and Information Systems (ICCIS ’19) focuses on the computing, information technologies, and information systems. It aims to provide a platform for sharing insights, experiences and interaction on various facets of evolving Technologies and patterns related to Information Technology. The main objective of the conference is to help students, research scholar, industry experts to share ideas and technology implementation. The conference encourages students, researchers and industrialists come with innovative ideas on latest technologies. ICCIS ’19 promotes technologists interaction and prolonged learning.</p>
+          <h2><center>About ICCIS</center></h2>
+          <p class="lead">The Second International Conference on Computing and Information Systems (ICCIS ’19) focuses on the computing, information technologies, and information systems. It aims to provide a platform for sharing insights, experiences and interaction on various facets of evolving Technologies and patterns related to Information Technology. The main objective of the conference is to help students, research scholar, industry experts to share ideas and technology implementation. The conference encourages students, researchers and industrialists come with innovative ideas on latest technologies. ICCIS ’19 promotes technologists interaction and prolonged learning.</p>
         </div>
       </div>
-      <div class="row" style="justify-content: center;">
-        <div class="col-12" style="text-align:center">
-          <h2  class="h3">Vission of the Department</h2>
-          <p>To build proficient Information Technologists through moral, ethical and technological standards for the societal well-being.
-          </p>
-        </div>
-        <div class="col-10" style="text-align:center">
-          <h2 class="h3">Mission of the Department</h2>
-          <ul style="text-align:Start; justify:">
-<li>To provide a practice oriented methodology with access to contemporary knowledge in IT for the betterment of the society</li>
-<li>To prepare students for competent careers in Information Technology through innovation, team spirit, ethics and entrepreneurial skills in evolving technologies</li>
-<li>To integrate our department with quality organizations worldwide and promote industry institute interaction for symbiotic benefits</li>
-<li>To promote interdisciplinary research through innovation and reflective thinking</li>
-</ul>
 
-      </div>
-
-    </div>
     </div>
 
   </section>
     <!-- End of About Page-->
 
     <!--Committe -->
-    <section id="committe">
-      <div class="container-fluid padding">
+    <section id="committe" style="margin-top:100px; background:url(img/louji.gif);-webkit-filter:brightness(120%); -moz-filter:brightness(110%)">
+
+      <div style="text-align:center;">
+          <h2 class="cool-link display-4" style="margin: 0 auto;">Organizing Committee</h2>
+      </div>
+      <div class="container-fluid padding" style="margin:50px">
         <div class="row text-centre padding">
-          <div class="col-12">
-              <h4 class="display-4" style="text-align:center">
-                      <center>ORGANIZING COMMITTEE</center></h2>
-                      <div class="border"></div>
-          </div>
+
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <h3 >CHIEF PATRONS</h3>
-              <p>
+            <h2>CHIEF PATRONS</h2>
+              <p class="lead">
                 Rev Fr Francis Jayapathy SJ<br>Rector, <br>LCS, India<br><br>
                 Rev Dr Alphonse Manickam SJ<br>Director, <br>LICET, India
               </p>
@@ -187,8 +190,8 @@
 
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <h3>PATRONS</h3>
-              <p>
+            <h2>PATRONS</h2>
+              <p class="lead">
               Dr L Antony Michael Raj<br>Principal, LICET, India<br><br>
               Rev Dr Justin Emmanuel SJ<br>Dean of Students, LICET, India<br><br>
               Mr Nicolas Juhel<br>Dean - Engineering Education, LICET, India<br><br>
@@ -196,20 +199,20 @@
               Mr S Francis Jeyapathi,<br>Vice – Principal, LICET, India</p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-          <h3>CONVENOR<br></h3>
-						<p>
+          <h2>CONVENOR<br></h2>
+						<p class="lead">
 						Dr R Juliana<br>Professor & Head, <br>Department of IT, LICET, India</p>
-						<h3>CONFERENCE CHAIR<br></h3>
-						<p>
+						<h2>CONFERENCE CHAIR<br></h2>
+						<p class="lead">
 						Dr R Deepa<br>Associate Professor, <br>Department of IT, LICET, India</p>
 
-            <h3>CONFERENCE CO-CHAIR<br></h3>
-						<p>
+            <h2>CONFERENCE CO-CHAIR<br></h2>
+						<p class="lead">
 						Ms Sherril Sophie Maria Vincent<br>Assistant Professor, <br>Department of IT, LICET, India</p>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-        <h3>Program Committe<br></h3>
-        <p style="line-height:1.8em">
+        <h2 >Program Committe<br></h2>
+        <p style="line-height:1.8em;" class="lead">
                     Ms A Janani, LICET, India<br>
                     Ms B Prabha, LICET, India<br>
                     Ms V Viancy, LICET, India<br>
@@ -227,8 +230,8 @@
           <div class="row text-centre padding" style="width:1100px; margin-left:auto;margin-right:auto">
 
             <div class="col-lg-6">
-              <h3>Advisory Committee</h3>
-                            <p>
+              <h2>Advisory Committee</h2>
+                            <p class="lead">
                 Dr Abdullah Tansel, The City University of New York, USA<br>
     Dr Ibrahima Faye, Universiti Teknologi PETRONAS, Malaysia<br>
     Dr Selwyn Piramuthu, University of Florida, USA<br>
@@ -260,8 +263,8 @@
 
 
         <div class="col-lg-6">
-          <h3>Technical Program Committee</h3>
-                      <p>
+          <h2>Technical Program Committee</h2>
+                      <p class="lead">
           Dr Grigori Sidorov, National Polytechnic Institute, IPN, Mexico<br>
 Dr Houjun Tang, Lawrence Berkeley National Lab (LBNL), USA<br>
 Dr Han Fang, Facebook, USA<br>
@@ -293,12 +296,18 @@ Ms B Monica Jenefer, Meenakshi Sundarajan Engineering College, India
       </div>
 
         </div>
+              </div>
     </section>
 
     <!--End of Committe-->
 
     <!--Call for Paper-->
       <section id="callforpaper">
+
+          <div style="text-align:center; margin: 20px;">
+              <h2 class="cool-link display-4" style="margin: 0 auto;">Topics of Intrest</h2>
+
+          </div>
         <div class="container-fluid padding">
           <div class="row text-centre padding">
 
@@ -313,12 +322,7 @@ Ms B Monica Jenefer, Meenakshi Sundarajan Engineering College, India
               background-size: cover;
             }
             </style>
-            <div class="col-12">
-                <h4 class="display-4" style="text-align:center;">
-                      <center>Topics of Intrest</center></h2>
-                            <h6 style="text-align:center;"><center>(Not limited to)</center  ></h6>
-                            <div class="border"></div>
-            </div>
+
             <div id="parallax-image">
 
               <div class="row text-centre padding">
@@ -364,13 +368,13 @@ Ms B Monica Jenefer, Meenakshi Sundarajan Engineering College, India
     <!--End Call for Paper-->
     <!--Key Node speakers-->
     <section id="keynodespeakers">
+      <div style="text-align:center; margin: 20px;">
+          <h2 class="cool-link display-4" style="margin: 0 auto;">Topics of Intrest</h2>
+
+      </div>
       <div class="container-fluid padding">
         <div class="row text-centre padding">
-          <div class="col-12">
-              <h4 class="display-4" style="text-align:center">
-                        <center>keynode speakers<center></h2>
-                          <div class="border"></div>
-          </div>
+
           <div class="container-fluid padding" style="width:1100px; margin-left:auto;margin-right:auto">
             <div class="row padding">
               <img src="img/abdullah.png">
@@ -389,15 +393,13 @@ Ms B Monica Jenefer, Meenakshi Sundarajan Engineering College, India
 
         <!--Conference Registration-->
         <section id="conferenceregi">
+          <div style="text-align:center; margin: 20px;">
+              <h2 class="cool-link display-4" style="margin: 0 auto;">Conference Registration</h2>
+
+          </div>
           <div class="container-fluid padding">
             <div class="row text-centre padding">
-              <div class="col-12">
-                  <h4 class="display-4" style="text-align:center">
-                            Registration Fee</h2>
 
-                            <h5 style="text-align:center">(includes conference kit, abstract proceedings, publication, refreshments & lunch)</h5>
-                            <div class="border"></div>
-              </div>
             </div>
             <div class="row text-centre padding">
                 <div class="col-sm-6 col-xs-12">
@@ -500,7 +502,11 @@ Ms B Monica Jenefer, Meenakshi Sundarajan Engineering College, India
 
         <!--Call for Sponsorship-->
         <section id="sponsership">
-          <div align="center"> <h3> <b>Call for Sponsorship </b></h3>
+          <div style="text-align:center; margin: 20px;">
+              <h2 class="cool-link display-4" style="margin: 0 auto;">Sponsership</h2>
+
+          </div>
+        <div>
           <p align="center">You are invited to support 2019 Second International Conference on Computing and Information Systems (ICCIS).</br>
            Sponsorship includes an on-site exhibit table.</br>
            Corporate support can be targeted to a particular event or activity at the Conference.</br>
