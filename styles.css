@@ -221,3 +221,6 @@ margin-left: 50%;
     width: 70%;
     //transition: width .3s;
 }
+.gif{
+  background: url(img/louji.gif);
+}
