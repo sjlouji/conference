@@ -15,6 +15,8 @@
 body{
   margin: 0;
   padding: 0;
+  position: absolute;
+  z-index: 1;
 }
 
 
@@ -24,17 +26,29 @@ body{
   width: 100%;
   height: 100%;
   min-height: auto;
+  background-image:URL("");
   background-size:100% auto;
-  background-position: center;
+  background-position: absolute;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-   z-index: 0;
+  padding-bottom: 20%;
+}
+#particles-js{
+  position: absolute;
+  width: 100%;
+height: auto;
+ z-index: o;
 }
 .active{
   border-bottom:5px solid #16AC0D;
   transition: width 0.2s, background-color 0.5s;
+  transition-duration: 0.6s;
+
+}
+.top {
+  opacity: 1;
 
 }
 .caption{

@@ -28,7 +28,31 @@
           });
   });
   </script>
+
   <!--End of navbar solid script-->
+  <script>
+  $(document).ready(function () {
+ 	$(document).on("scroll", onScroll);
+});
+
+ function onScroll(event){
+ 	var scrollPosition = $(document).scrollTop();
+     $('nav li a').each(function () {
+       var currentLink = $(this);
+       var refElement = $(currentLink.attr("href"));
+       if (refElement.position().top <= scrollPosition
+           && refElement.position().top + refElement.height() > scrollPosition) {
+         $('nav li a').removeClass("active");
+         currentLink.addClass("active");
+       }
+
+       else{
+         currentLink.removeClass("active");
+       }
+     });
+ }
+  </script>
+
   <!--Smooth Scrolling Animation Script-->
   <script type="text/javascript">
         $(document).ready(function()
@@ -41,35 +65,17 @@
               $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
                if ($target.length)
                 {
-                  var targetOffset = $target.offset().top-$('nav').height()-20;
+                  var targetOffset = $target.offset().top-$('nav').height()-10;
                   $('html,body') .animate({scrollTop: targetOffset}, 1000);
+
                   return false;
                  }
                 }
-               });
+              });
+
               });
   </script>
-<script>
-      $(document).ready(function()
-      {
-        $('nav li a').click(function()
-        {
-          $('.active').removeClass('active');
-          $(this).addClass('active');
 
-       });
-
-      });
-
-</script>
-<script>
-// Highlight the top nav as scrolling occurs
-$('body').scrollspy({
-    target: 'navbar-fixed-top',
-	offset: 70
-
-});
-</script>
 
   <!--Start of Navbar and header at the top-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -81,7 +87,7 @@ $('body').scrollspy({
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="navbar-item active">
+            <li class="navbar-item">
               <a class="nav-link lead" href="#louji" style="color:white;">Home</a>
             </li>
             <li class="navbar-item ">
@@ -103,18 +109,22 @@ $('body').scrollspy({
               <a class="nav-link lead" href="#sponsership" style="color:white">Call for Sponser</a>
             </li>
             <li class="navbar-item ">
-              <a class="nav-link lead" href="#contact" style="color:white">Contact</a>
+              <a class="nav-link lead" href="#contact3" style="color:white">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <header class="headerblue" id="louji">
 
-      <div class="hero container center-vertically-holder">
+    <header class="headerblue" id="louji" >
+
+<div id="particles-js"></div>
+
+      <div class="hero container center-vertically-holder" >
+
           <div class="row center-vertically" class="lo">
 
-              <div style="margin-top:150px" >
+              <div style="margin-top:150px">
                   <h3 class="display-4" style="color: white;font-family:'Helvetica';
 ">2<sup>nd</sup> International Conference on Computing and Information Systems</h2>
 <div class="boxed">
@@ -133,20 +143,20 @@ $('body').scrollspy({
 </div>
 <div class="caption" style="margin:0 auto; margin-top:50px;">
 <h3  style="color: white;font-family:'Helvetica';">Febraury 28 and March 1, 2019</h3>
-</div>
 
+</div>
           </div>
+
       </div>
 
-    </header>
+</header>
     <!--End of Navbar and header at the top-->
 
 
     <!--About Page-->
-    <section id="aboutus">
-      <div style="text-align:center">
+    <section id="aboutus" style="margin-top:100px;" class="top">
+      <div style="text-align:center;">
           <h2 class="cool-link display-4" style="margin: 0 auto;">About</h2>
-
       </div>
       <div class="jumbotron jumbotron-fluid" style="margin:50px;background:#F8F8F8;">
         <div class="row" style="justify-content: center;">
@@ -195,7 +205,7 @@ $('body').scrollspy({
     <!-- End of About Page-->
 
     <!--Committe -->
-    <section id="committe" style="margin-top:100px; background:url(img/louji.gif);-webkit-filter:brightness(120%); -moz-filter:brightness(110%)">
+    <section id="committe"  style="margin-top:100px; background:url(img/louji.gif);-webkit-filter:brightness(120%); -moz-filter:brightness(110%)">
 
       <div style="text-align:center;">
           <h2 class="cool-link display-4" style="margin: 0 auto;">Organizing Committee</h2>
@@ -517,7 +527,7 @@ Ms B Monica Jenefer, Meenakshi Sundarajan Engineering College, India
         <!--End of Conference Registration-->
 
         <!--Call for Sponsorship-->
-        <section id="sponsership">
+        <section id="sponsership" style="margin-top:100px;">
           <div style="text-align:center; margin: 50px;">
               <h2 class="cool-link display-4" style="margin: 0 auto;">Sponsership</h2>
 
@@ -618,13 +628,12 @@ Ms B Monica Jenefer, Meenakshi Sundarajan Engineering College, India
         </div>
       </section>
         <!--End of call for sponsorship-->
-        <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="400px" id="gmap_canvas" src="https://maps.google.com/maps?q=loyola%20icam%20college%20&t=k&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net">tree layout wordpress themes</a></div>
+        <section id="contact3" style="margin-top:150px;">
+        <div class="mapouter" id="contact3"><div class="gmap_canvas"><iframe width="100%" height="400px" id="gmap_canvas" src="https://maps.google.com/maps?q=loyola%20icam%20college%20&t=k&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net">tree layout wordpress themes</a></div>
         <style>.mapouter{text-align:right;height:400px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style></div>
-
         </div>
-
         <!-- Footer -->
-  <footer class="page-footer font-small unique-color-dark" style="background-color:#292c2f ;" id="contact">
+  <div class="page-footer font-small unique-color-dark" style="background-color:#292c2f ;">
 
       <div style="background-color: #6351ce;">
         <div class="container">
@@ -729,7 +738,8 @@ INDIA</p>
 
       <!-- Copyright -->
 
-    </footer>
+    </div>
+  </section>
     <!-- Footer -->
     <script type="text/javascript"src="particles.js"></script>
     <script type="text/javascript" src="app.js"></script>
